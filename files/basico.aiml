@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+        <pattern>HOLA</pattern>
+        <template>
+            <random>
+                <li>Bienvenido, ¿Quieres saber cuáles son las entradas o vamos a la sopa?</li>
+                <li>Buen día. ¿Toma entrada o empieza con la sopa?</li>
+                <li>Sea bienvenido. ¿Le digo las entradas o pasamos a la sopa?</li>
+                <li>Muy buen día. ¿Quiere saber las entradas o elige sopa de una vez?</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>* ENTRADAS</pattern>
+        <template>
+            <srai>ENTRADAS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>SOPA</pattern>
+        <template>¿Quieres sopa del día o consomé?</template>
+    </category>
+</aiml>
