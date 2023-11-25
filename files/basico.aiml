@@ -19,7 +19,7 @@
         </template>
     </category>
     <category>
-        <pattern>SOPA</pattern>
-        <template>¿Quieres sopa del día o consomé?</template>
+        <pattern>LA * ESTÁ FRÍA</pattern>
+        <template>Una enorme disculpa, llevo su <star/> a calentar</template>
     </category>
 </aiml>

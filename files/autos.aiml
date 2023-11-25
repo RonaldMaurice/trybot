@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- Saludo -->
+    <category>
+        <pattern>HOLA</pattern>
+        <template>¡Bienvenido! ¿En qué puedo ayudarte hoy?</template>
+    </category>
+
+    <!-- Despedida -->
+    <category>
+        <pattern>ADIÓS</pattern>
+        <template>¡Hasta luego! Si tienes más preguntas, estaré aquí.</template>
+    </category>
+
+    <!-- Etiqueta random para respuestas variadas -->
+    <category>
+        <pattern>CUÉNTAME UN POCO SOBRE AUTOS</pattern>
+        <template>
+            <random>
+                <li>Los autos son vehículos motorizados diseñados para el transporte.</li>
+                <li>Existen diferentes tipos de autos, como sedanes, SUVs y deportivos.</li>
+                <li>Algunas marcas famosas son Toyota, Ford y BMW.</li>
+            </random>
+        </template>
+    </category>
+
+    <!-- Pregunta sobre preferencias -->
+    <category>
+        <pattern>ME GUSTA *</pattern>
+        <template>Es interesante que te guste el <star/>. ¿Hay algo en particular que te gustaría saber sobre ese modelo?</template>
+    </category>
+    <category>
+        <pattern>MODELO TESLA</pattern>
+        <template>Ofrece una cabina espaciosa con el parabrisas panorámico más grande del mundo y asientos para hasta siete personas</template>
+    </category>
+    
+      <category>
+        <pattern>ME GUSTA *</pattern>
+        <template>Es interesante que te guste el <star/>. ¿Hay algo en particular que te gustaría saber sobre ese modelo?</template>
+    </category>
+    <category>
+        <pattern>MODELO BMW SERIE 3</pattern>
+        <template>Potente motor con 184 HP para disfrutar de una impresionante experiencia de conducción deportiva.</template>
+        <template>Excepcional aceleración de 0 a 100 km/h en 7.1 segundos.</template>
+    </category>
+    
+    <!-- Si no se comprende la pregunta -->
+    <category>
+        <pattern>*</pattern>
+        <template>No estoy seguro de entender. ¿Puedes reformular tu pregunta?</template>
+    </category>
+</aiml>
